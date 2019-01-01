@@ -20,6 +20,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 
 
 def main():
+
     """ Demonstrates OVERLOADING the  +  symbol. """
     # -------------------------------------------------------------------------
     # First example below:  computes 5 + 33 (addition, as in arithmetic)
@@ -62,43 +63,8 @@ def main():
     # But if you don't want spaces
     # (or want to otherwise format the string result):
     # -------------------------------------------------------------------------
-    s = str(x) + str(y) + str(z)
-    print(s)
 
-    print()
-    print('-----------------------------------------------------------')
-    print('More examples using string concatenation:')
-    print('-----------------------------------------------------------')
-
-    # -------------------------------------------------------------------------
-    # Another example: prints  548x77 = 42196  then prints  (548, 77).
-    # -------------------------------------------------------------------------
-    a = 548
-    b = 77
-    print(str(a) + 'x' + str(b) + ' = ' + str(a * b))
-
-    s = '(' + str(a) + ', ' + str(b) + ')'
-    print(s)
-
-    # -------------------------------------------------------------------------
-    # We will later learn even better ways to make fancy strings,
-    # using the   format   method.  Just to whet your appetite,
-    # here is a simple example using the   format   method.
-    # -------------------------------------------------------------------------
-    print()
-    print('-----------------------------------------------------------')
-    print('Examples using the   format   method:')
-    print('-----------------------------------------------------------')
-
-    format_string1 = 'Multiplication: {:3} x {:3} = {:6}'
-    format_string2 = 'Division: {:5.1f} / {:5.1f} = {:6.3f}'
-    print(format_string1.format(311, 80, 311 * 80))
-    print(format_string1.format(50, 222, 50 * 222))
-    print(format_string2.format(311, 80, 311 / 80))
-    print(format_string2.format(50, 222, 50 / 222))
-
-
-# -----------------------------------------------------------------------------
-# Calls  main  to start the ball rolling.
-# -----------------------------------------------------------------------------
-main()
+x = []
+for k in range(5):
+     x = x + [(2 * k)]
+print(x)
